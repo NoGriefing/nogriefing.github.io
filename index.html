@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OLLIE</title>
+
+<style>
+    @font-face {
+		font-family: 'AzeretMono-ExtraLight';
+		src: url('AzeretMono-ExtraLight.woff2') format('woff2');
+		font-weight: 200;
+		font-style: normal;
+    }
+    @font-face {
+		font-family: 'KUNSTLER';
+		src: url('KUNSTLER.ttf') format('truetype');
+		font-weight: 200;
+		font-style: normal;
+    }
+    
+
+    body {
+        margin: 0px;
+        font-family: 'AzeretMono-ExtraLight';
+        overflow: hidden;
+    }
+
+    .structure {
+        background-color: blue;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .title {
+        margin: 0px;
+        font-family: 'KUNSTLER';
+        font-size: 6em;
+        margin-left: 0px;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+        margin-bottom: 40px;
+        margin-left: -20px;
+    }
+    .header {
+        display: flex;
+        width: 90%;
+        align-items: start;
+        justify-content: space-between;
+        flex-direction: row;
+        padding-top: 5%;
+        font-size: 0.8em;
+    }
+    .footer {
+        display: flex;
+        width: 90%;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        padding-bottom: 5%;
+        font-size: 0.8em;
+    }
+
+    .contentbox {
+        Xbackground-color: blue;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: white;
+    }
+
+    p {
+        margin: 0px;
+    }
+
+    .bold {
+        font-weight: bold;
+        color: white;
+        text-shadow: 0px 0px 1.5px white;
+    }
+
+    .indent {
+        margin-left: 4em;
+        font-size: 0.7em;
+    }
+
+    .content {
+        font-size: 0.7em;
+    }
+
+    img {
+        margin-left: 40px;
+    }
+
+    .buh {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .icons {
+        position:absolute;
+        vertical-align: top;
+    }
+
+    .text {
+        width: 23em;
+    }
+
+    a {
+        color: white;
+    }
+
+    .credits {
+        font-size: .6em;
+        text-align: right;
+    }
+
+    .mainimg {
+        border-style: solid;
+        box-shadow: 2px 2px 1px black;
+        border-width: 1px;
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+    width: 7px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background-color: black;
+    background-clip: content-box;
+    border: 5px solid transparent;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: black;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: black; 
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="structure">
+    <div class="header">
+        <p>&nbsp;&nbsp;&nbsp;ip: mc.nogriefing.com // ver: BTA v7.3_04</p>
+        <img src="images/icon.png" alt="icon" height="50px">
+    </div>
+
+    <div class="contentbox">
+        <div class="buh">
+        
+        <p class="title">No Griefing!</p>
+        
+
+        <div class="text">
+
+            <div class="indent">
+                <div class="bold">About I •</div>
+                No Griefing 2020-2025<br>
+                Macbook Mini (2014)
+            </div>
+            <div class="content">No Griefing is a Minecraft server I run in my closet on an old 2014 Mac mini. I started it originally as a quarantine project to keep in touch with friends during the worldwide lockdown of 2020. It's been through countless worlds and versions, but right now it's running <a target="_blank" href="https://www.betterthanadventure.net">Better Than Adventure</a>, a mod for Minecraft Beta 1.7.3. It heavily expands the game's content while keeping the core design philosophy alive: a game with no goal- no winners or losers. It's a really cool spot to hang out and meet new friends, so if you have time, feel free to check it out!</div>
+            <br>
+            <div class="indent">
+                <div class="bold">About II ••</div>
+                How To Play "No Griefing" By Ollie<br>
+                Lessons On Building & Community (2025)
+            </div>
+            <div class="content">
+            Yes, it's *technically* my server in the sense that I own the computer that it runs on, but it really belongs to everyone. Anyone can join and build whatever they want, wherever they want. Minecraft is about both building and community, and thats why this server exists in the first place. Everyone is welcome!
+            </div>
+            <br>
+            <div class="indent">
+                <div class="bold">Final Thoughts •••</div>
+                Contact, Photos, Upkeep<br>
+                Website display (2025)
+            </div>
+            <div class="content">For submitting photos for display on this website or any other concerns, please email me at <a target="_blank" href="mailto:hello@olliesharddrive.com">hello@olliesharddrive.com</a>. Also, please consider donating to my <a target="_blank" href="https://ko-fi.com/W7W0197OHU"> Ko-Fi</a>. Servers cost money to run, and every little bit helps!</div>
+
+        </div>
+        </div>
+
+        <div>
+        <img name="mainimg" class="mainimg" src="images/1.png" alt="disp" height="400em">
+        <p class="credits" id="credits">Cr: eeby</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&nbsp;&nbsp;&nbsp;01&nbsp;&nbsp;&nbsp;nogriefing.com</p>
+        <p>(c) ollie's hard drive&nbsp;&nbsp;&nbsp;02&nbsp;&nbsp;&nbsp;</p>
+    </div>
+</div>
+
+<script>
+    var imagesArray = ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png", "8.png"];
+    var imageCredits = ["Cr: eeby", "Cr: eeby", "Cr: eeby", "Cr: eeby", "Cr: eeby", "Cr: eeby", "Cr: eeby", "Cr: eeby"];
+
+    function displayImage() {
+        var num = Math.floor(Math.random() * (imagesArray.length));
+        document.mainimg.src = ("images/").concat(imagesArray[num]);
+        document.getElementById("credits").innerHTML = imageCredits[num];
+    }
+
+    displayImage()
+</script>
+
+</body>
+
+</html>
