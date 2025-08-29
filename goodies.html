@@ -44,6 +44,18 @@
         margin-bottom: 40px;
         margin-left: -20px;
     }
+
+    .subtitle {
+        margin: 0px;
+        font-family: 'KUNSTLER';
+        font-size: 4em;
+        margin-left: 0px;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+        margin-bottom: 20px;
+        margin-left: 15px;
+    }
+
     .header {
         display: flex;
         width: 90%;
@@ -64,7 +76,7 @@
     }
 
     .contentbox {
-        Xbackground-color: blue;
+        Xbackground-color: red;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -128,17 +140,9 @@
         color: white;
     }
 
-    .links {
-        font-size: 0.7em;
-        text-align: right;
-    }
-
-    .boldlinks {
-        font-size: 0.7em;
-        text-align: right;
-        font-weight: bold;
-        color: white;
-        text-shadow: 0px 0px 1.5px white;
+    .packcard {
+        display: flex;
+        margin-bottom: 20px;
     }
 
     /* width */
@@ -179,37 +183,32 @@
     <div class="contentbox">
         <div class="buh">
         
-        <p class="title">No Griefing!</p>
-        
+        <p class="title">Goodies</p>
 
-        <div class="text">
-
-            <div class="indent">
-                <div class="bold">About I •</div>
-                No Griefing 2020-2025<br>
-                Macbook Mini (2014)
+        <div class="packcard">
+            <img name="mainimg" class="mainimg" src="images/crowbar.png" alt="disp" height="200em">
+            <div class="text">
+                <p class="subtitle">Crowbar</p>
+                <p class="indent">Swaps the steel axe with the crowbar from Half Life 2.</p>
+                <br>
+                <p class="indent"><a href="downloads/mc_crowbarpack.zip">mc_crowbarpack.zip</a></p>
             </div>
-            <div class="content">No Griefing is a Minecraft server I run in my closet on an old 2014 Mac mini. I started it originally as a quarantine project to keep in touch with friends during the worldwide lockdown of 2020. It's been through countless worlds and versions, but right now it's running <a target="_blank" href="https://www.betterthanadventure.net">Better Than Adventure</a>, a mod for Minecraft Beta 1.7.3. It heavily expands the game's content while keeping the core design philosophy alive: a game with no goal- no winners or losers. It's a really cool spot to hang out and meet new friends, so if you have time, feel free to check it out!</div>
-            <br>
-            <div class="indent">
-                <div class="bold">Final Thoughts •••</div>
-                Contact, Photos, Upkeep<br>
-                Website display (2025)
+        </div>
+        <div class="packcard">
+            <img name="mainimg" class="mainimg" src="images/cola.png" alt="disp" height="200em">
+            <div class="text">
+                <p class="subtitle">Bloxy Cola</p>
+                <p class="indent">Swaps out ice cream with Bloxy Cola from Roblox.</p>
+                <br>
+                <p class="indent"><a href="downloads/mc_colapack.zip">mc_colapack.zip</a></p>
             </div>
-            <div class="content">For submitting photos for display on this website or any other concerns, please email me at <a target="_blank" href="mailto:hello@olliesharddrive.com">hello@olliesharddrive.com</a>. Also, please consider donating to my <a target="_blank" href="https://ko-fi.com/W7W0197OHU"> Ko-Fi</a>. Servers cost money to run, and every little bit helps!</div>
+        </div>
 
         </div>
-        </div>
-
         <div>
-        <img name="mainimg" class="mainimg" src="images/1.png" alt="disp" height="400em">
-        <p class="credits" id="credits">Cr: eeby</p>
-        <br>
-        <br>
-        <br>
-        <p class="boldlinks">Links</p>
-        <p><a href="goodies.html" class="links">Goodies ></a></p>
         </div>
+    
+    <p class="indent"><a href="index.html">< Back</a></p>
     </div>
 
     <div class="footer">
@@ -217,19 +216,6 @@
         <p>(c) ollie's hard drive&nbsp;&nbsp;&nbsp;25&nbsp;&nbsp;&nbsp;</p>
     </div>
 </div>
-
-<script>
-    var imagesArray = ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png", "8.png"];
-    var imageCredits = ["Cr: eeby", "Cr: eeby", "Cr: eeby", "Cr: eeby", "Cr: eeby", "Cr: eeby", "Cr: eeby", "Cr: eeby"];
-
-    function displayImage() {
-        var num = Math.floor(Math.random() * (imagesArray.length));
-        document.mainimg.src = ("images/").concat(imagesArray[num]);
-        document.getElementById("credits").innerHTML = imageCredits[num];
-    }
-
-    displayImage()
-</script>
 
 </body>
 
