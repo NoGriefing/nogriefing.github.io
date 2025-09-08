@@ -175,6 +175,19 @@
 
 <body>
 
+<script>
+
+    var imagesArray = ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png", "8.png"];
+    var imageCredits = ["Cr: eeby", "Cr: eeby", "Cr: eeby", "Cr: eeby, NeruXP", "Cr: eeby", "Cr: eeby", "Cr: eeby", "Cr: eeby"];
+
+    function displayImage() {
+        var num = Math.floor(Math.random() * (imagesArray.length));
+        document.mainimg.src = ("images/").concat(imagesArray[num]);
+        document.getElementById("credits").innerHTML = imageCredits[num];
+    }
+
+</script>
+
 <div class="structure">
     <div class="header">
         <p>&nbsp;&nbsp;&nbsp;<span class="ip">ip mc.nogriefing.com </span>// ver: BTA v7.3_04</p>
@@ -215,6 +228,8 @@
 		<div class="linkbox">
         <p class="boldlinks">Links</p>
         <p><a href="goodies.html" class="links">Goodies ></a></p>
+        <p><a href="archives.html" class="links">Archives ></a></p>
+        <p><a target="_blank" href="https://discord.com/invite/hy9XRuANJ9" class="links">Discord ></a></p>
 		</div>
         </div>
     </div>
@@ -226,15 +241,6 @@
 </div>
 
 <script>
-    var imagesArray = ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png", "8.png"];
-    var imageCredits = ["Cr: eeby", "Cr: eeby", "Cr: eeby", "Cr: eeby, NeruXP", "Cr: eeby", "Cr: eeby", "Cr: eeby", "Cr: eeby"];
-
-    function displayImage() {
-        var num = Math.floor(Math.random() * (imagesArray.length));
-        document.mainimg.src = ("images/").concat(imagesArray[num]);
-        document.getElementById("credits").innerHTML = imageCredits[num];
-    }
-
     displayImage()
 </script>
 
